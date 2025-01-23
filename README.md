@@ -6,7 +6,7 @@ Tecnologias que estamos Utilizando
 - React
 - Tailwind
 - Poastman (testando os endpoints)
-- 
+
 Para executar o projeto
 - Clone esse repositório
 - Abra com o VsCode esse repositório
