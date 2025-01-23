@@ -6,9 +6,10 @@ Tecnologias que estamos Utilizando
 - React
 - Tailwind
 - Poastman (testando os endpoints)
+- 
+Tecnologias que estamos Utilizando
+- Javascript
+- React
+- Tailwind
+- Poastman (testando os endpoints)
 
-Para utilizar o projeto:
--Faça uma cópia desse repositório
--Inicie com o VsCode
--Quando estiver no ambiente do VsCode, pressione CTRL + "
--No terminal instale o node modules
