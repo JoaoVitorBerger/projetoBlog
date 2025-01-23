@@ -8,7 +8,7 @@ Tecnologias que estamos Utilizand
 - Poastman (testando os endpoints)
 
   Para utilizar o projeto:
-  -Faça uma cópia desse repositório
-  -Inicie com o VsCode
-  -Quando estiver no ambiente do VsCode, pressione CTRL + "
-  -No terminal instale o node modules
+-Faça uma cópia desse repositório
+-Inicie com o VsCode
+-Quando estiver no ambiente do VsCode, pressione CTRL + "
+-No terminal instale o node modules
