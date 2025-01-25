@@ -18,15 +18,15 @@ export default function Atualidades() {
     },[])
     return (
     <>
-        <h1 className="text-4xl ">Notícias pelo Mundo</h1>
+        <h1 className="text-6xl  font-rufina py-7">Notícias pelo Mundo</h1>
         <div className="grid grid-cols-1 justify-center items-center container mt-10">
             {
                 news.map((notice) => {
                     return notice.media && notice.media[0] ? (
-                        <div className="w-full h-auto py-5" key={100 * Math.random()}   >
-                            <a href={notice.url}>
-                                <img src={notice.media[0]["media-metadata"][2].url} className="w-full" alt={notice.title} />
-                                <h3 className="text-2xl font-rufina">{notice.title}</h3>
+                        <div className="w-full h-auto mb-5 " key={100 * Math.random()}   >
+                            <a href={notice.url} className="w-full flex  flex-col justify-center items-center ">
+                                <img src={notice.media[0]["media-metadata"][2].url} className="w-2/3 shadow-lg rounded-xl shadow-gray-900" alt={notice.title} />
+                                <h3 className="text-2xl font-rufina w-2/3 pt-3">{notice.title}</h3>
                             </a>
                         </div>
                     ) : (
@@ -36,7 +36,7 @@ export default function Atualidades() {
             }
         </div>
     
-    <button onClick={() => {
+    <button className=" border-2 border-black px-10 py-2 rounded-lg hover:bg-black hover:text-white" onClick={() => {
     
         Request(cont).then((data) => {
             setNews((actuallyNews) => [...actuallyNews,...data])

@@ -21,10 +21,10 @@ export default function InfoDiaria() {
                     newsSide.map((notice) => {
                         try {
                             return (
-                                <div className="w-full h-auto py-5" key={100 * Math.random()}>
+                                <div className="w-full h-auto py-5 " key={100 * Math.random()}>
                                     <a href={notice.url}>
-                                        <img src={notice.media[0]["media-metadata"][2].url} className="w-full" alt={notice.title} />
-                                        <h3 className="text-2xl font-rufina">{notice.title}</h3>
+                                        <img src={notice.media[0]["media-metadata"][2].url} className="w-full rounded-md shadow-md" alt={notice.title} />
+                                        <h3 className="text-2xl text-center font-rufina">{notice.title}</h3>
                                     </a>
                                 </div>
                             )
@@ -34,7 +34,7 @@ export default function InfoDiaria() {
                     })
                 }
             </div>
-            <button onClick={() => {
+            <button className="border-2 border-black  hover:bg-black hover:text-white px-10 py-2 rounded-lg" onClick={() => {
                 RequestSide(contSide).then((data) => {
                     setSideNews(() => [...data])
                     setConterSide(() => {
